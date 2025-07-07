@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Gaming & AI Engineer Profile</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    /* Horizontal Scroll Container */
+    .horizontal-scroll {
+      display: flex;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      height: 100vh;
+      width: 100%;
+    }
+
+    .section {
+      flex: none;
+      width: 100vw;
+      height: 100vh;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    /* Section Styles */
+    .section:nth-child(odd) {
+      background-color: #FFD373;
+    }
+
+    .section:nth-child(even) {
+      background-color: #80C5A2;
+    }
+
+    /* Language Toggle Button */
+    .language-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background-color: #F27873;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      z-index: 1000;
+      transition: background-color 0.3s ease;
+    }
+
+    .language-toggle:hover {
+      background-color: #D92CDD;
+    }
+
+    /* Section Content */
+    h1, h2 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      max-width: 800px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 20px 0;
+    }
+
+    ul li {
+      font-size: 1.2rem;
+      margin: 10px 0;
+    }
+
+    /* Button Styles */
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      color: #fff;
+      text-decoration: none;
+      background-color: #468BCA;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #008A45;
+    }
+
+    /* Magazine Style Enhancements */
+    .featured-projects, .testimonials, .certifications {
+      margin-top: 20px;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .testimonials p, .certifications ul, .featured-projects ul {
+      margin: 10px 0;
+    }
+
+    .certifications ul, .featured-projects ul {
+      list-style: none;
+    }
+
+    .certifications ul li, .featured-projects ul li {
+      padding: 10px;
+      background-color: #F27873;
+      color: white;
+      border-radius: 10px;
+      margin: 10px 0;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #5F5F5E;
+      color: white;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Language Toggle Button -->
+  <button class="language-toggle" id="languageToggle">中文</button>
+
+  <!-- Horizontal Scroll Sections -->
+  <div class="horizontal-scroll" id="content">
+    <!-- Welcome Section -->
+    <div class="section" id="welcome">
+      <h1 data-en="Welcome!" data-zh="欢迎！">Welcome!</h1>
+      <p data-en="Explore my unique blend of gaming expertise and AI localization skills." data-zh="探索我在游戏专业知识和AI本地化技能上的独特结合。">
+        Explore my unique blend of gaming expertise and AI localization skills.
+      </p>
+    </div>
+
+    <!-- Gaming Expertise Section -->
+    <div class="section" id="gaming-expertise">
+      <h2 data-en="🎮 Gaming Expertise" data-zh="🎮 游戏专业知识">🎮 Gaming Expertise</h2>
+      <p data-en="Localized AAA titles and indie games for global audiences." data-zh="为全球受众本地化AAA大作和独立游戏。">
+        Localized AAA titles and indie games for global audiences.
+      </p>
+      <ul>
+        <li data-en="MMORPG" data-zh="大型多人在线角色扮演游戏">MMORPG</li>
+        <li data-en="MOBA" data-zh="多人在线战术竞技游戏">MOBA</li>
+        <li data-en="Unity & Unreal Engine" data-zh="Unity & Unreal 引擎">Unity & Unreal Engine</li>
+      </ul>
+    </div>
+
+    <!-- AI Localization Section -->
+    <div class="section" id="ai-localization">
+      <h2 data-en="🤖 AI Localization" data-zh="🤖 AI本地化">🤖 AI Localization</h2>
+      <p data-en="Adapted LLMs and other AI tools for cultural relevance." data-zh="为语言模型和其他AI工具进行文化适配。">
+        Adapted LLMs and other AI tools for cultural relevance.
+      </p>
+      <ul>
+        <li data-en="ChatGPT Localization" data-zh="ChatGPT本地化">ChatGPT Localization</li>
+        <li data-en="NLP and ML Models" data-zh="自然语言处理与机器学习模型">NLP and ML Models</li>
+        <li data-en="AI Content Adaptation" data-zh="AI内容适配">AI Content Adaptation</li>
+      </ul>
+    </div>
+
+    <!-- Featured Projects Section -->
+    <div class="section" id="featured-projects">
+      <h2 data-en="🏆 Featured Projects" data-zh="🏆 特色项目">🏆 Featured Projects</h2>
+      <div class="featured-projects">
+        <ul>
+          <li data-en="🎮 [Game Title] - Lead Localizer" data-zh="🎮 [游戏名称] - 主本地化工程师">🎮 [Game Title] - Lead Localizer</li>
+          <li data-en="🤖 AI Project - Cultural Adaptation" data-zh="🤖 AI项目 - 文化适配">🤖 AI Project - Cultural Adaptation</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Certifications Section -->
+    <div class="section" id="certifications">
+      <h2 data-en="📜 Certifications" data-zh="📜 认证">📜 Certifications</h2>
+      <div class="certifications">
+        <ul>
+          <li data-en="Unity Certified Developer" data-zh="Unity认证开发者">Unity Certified Developer</li>
+          <li data-en="AI Localization Specialist" data-zh="AI本地化专家">AI Localization Specialist</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    © 2024 [Your Name]. Built with ❤️.
+  </footer>
+
+  <!-- Language Toggle Script -->
+  <script>
+    const languageToggle = document.getElementById("languageToggle");
+    const content = document.getElementById("content");
+
+    languageToggle.addEventListener("click", () => {
+      const isEnglish = languageToggle.innerText === "中文";
+      languageToggle.innerText = isEnglish ? "English" : "中文";
+
+      // Update all sections' text
+      const sections = content.querySelectorAll("[data-en]");
+      sections.forEach((element) => {
+        element.innerText = isEnglish ? element.dataset.zh : element.dataset.en;
+      });
+    });
+  </script>
+</body>
+</html>
